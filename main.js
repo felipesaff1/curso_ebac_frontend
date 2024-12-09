@@ -23,7 +23,7 @@ $(document).ready(function(){
 
         },
         submitHandler: function (form) {
-            alert("Sua requisição foi enviada para análise, parabéns pela aquisição!");
+            alert("Formulario enviado com sucesso");
             form.reset();
         },
         invalidHandler: function(evento, validador) {
