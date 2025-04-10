@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteador</title>
+    <title>Calculadora</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -11,16 +11,28 @@
 </head>
 <body>
     <main>
-        <h1>Sorteador</h1>
+        <h1>Calculadora</h1>
         <form id="form-sorteador">
-            <div>
-                <label for="numero-maximo">Número Maximo</label>
-                <input type="number" id="numero-maximo" required min="2" value="2" step="1">
+            <div class="container">
+                <div>
+                    <label for="numerador">Numerador</label>
+                    <input type="number" id="numerador" required>
+                </div>
+                <select id="operacao">
+                    <option value="soma">Adição</option>
+                    <option value="subtracao">Subtração</option>
+                    <option value="multiplicacao">Multiplicação</option>
+                    <option value="divisao">Divisão</option>
+                </select>
+                <div>
+                    <label for="denominador">Denominador</label>
+                    <input type="number" id="denominador" required >
+                </div>
             </div>
-            <button type="submit">Sortear Número</button>
+            <button type="submit">Resultado</button>
         </form>
         <div class="resultado">
-            O número sorteado foi: <span id="resultado-valor"></span>
+            O resultado é: <span id="resultado-valor"></span>
         </div>
     </main>
     <script src="@@ENDERECO_DO_JS"></script>

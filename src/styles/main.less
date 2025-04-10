@@ -1,14 +1,21 @@
 @fontePrincipal: Roboto, sans-serif;
 @fonteDoTitulo: Lobster, cursive;
-@corDoTexto: #fff;
-@corDeFundo: #eb3b5a;
-@corDoBotao: #000;
-@corDoFundoBotao: #f7b731;
+@corDoTexto: #003f88;
+@corDeFundo: #ffd500;
+@corDoBotao: #fdc500;
+@corDoFundoBotao: #00296b;
 
 body{
     font-family: @fontePrincipal;
     color: @corDoTexto;
     background-color: @corDeFundo;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px; // Espaço entre os campos
+    align-items: center;
+    margin: 32px 0;
 }
 h1{
     font-family: @fonteDoTitulo;
@@ -21,7 +28,8 @@ main{
     font-size: 2em;
     text-align: center;
 }
-button{
+button,
+select {
     padding: 16px;
     cursor: pointer;
     font-weight: bold;
